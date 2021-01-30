@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        br{
+            padding: 20px;
+        }
+        form{
+            /* border: red 3px solid; */
+            text-align: center;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        span{
+            color: red;
+        }
+        body{
+            text-transform: capitalize;
+        }
+    .dropbtn {
+      background-color: rgb(202, 202, 236);
+      color:black;
+      padding: 10px;
+      margin-right: 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      text-transform: capitalize;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+    }
+    
+    .dropdown-content a:hover {background-color:gray;}
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+      background-color:yellow;
+    }
+    .sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: lightyellow;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+}
+
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color:black;
+display: block;
+transition: 0.3s;
+}
+
+.sidenav a:hover {
+color:black;
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+#sri{
+background-color: lightyellow;
+}
+#no{
+
+background-image: url("insurance.jpg");
+text-align: center;
+font-size: 20px;
+text-transform: capitalize;
+font-weight: 900;
+font-family: cursive;
+width:150mm;
+}
+body{
+    background-color: rgb(187, 187, 240);
+    text-align: center;
+}
+address{
+    font-size: 30px;
+}
+.mapouter{
+margin-left: 500px;
+}
+    </style>
+</head>
+<body>
+    <div id="sri">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="about.html">About</a>
+            <a href="clients.html">Clients</a>
+            <a href="contact.html">Contact</a>
+            <a href="help.html">Help</a>
+    
+          </div> 
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+          </script>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="insurancehomepage.html" id="noline">home</a></button>
+            <div class="dropdown-content">
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">house insurance</button>
+            <div class="dropdown-content">
+            <a href="#">Standard Fire and Special Perils Policy.</a>
+            <a href="#">earthquake insurance</a>
+            <a href="#">Property insurance</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">vehicle insurance</button>
+            <div class="dropdown-content">
+            <a href="twowheeler.html">two wheeler insurance</a>
+            <a href="fourwheeler.html">four wheeler insurance</a>
+            <a href="other.html">other vehicle insurance</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">life insurance</button>
+            <div class="dropdown-content">
+            <a href="#">Jeevan Umang</a>
+            <a href="#">Jeevan Amar</a>
+            <a href="#">Money Back 25 years</a>
+            </div>
+          </div>
+          <div class="dropdown" id="j">
+            <p class="dropbtn" id="no">!!!!guten tags insurance welcome you</p>
+            <div class="dropdown-content">
+            </div>
+          </div>
+          </div>
+</body>
+<body>
+    <form action="renewal">
+        <h1>!--Guten tags  twowheeler insurance renewal--!</h1>
+        <br>
+        <br>
+        <label for="regnum">enter the vehicle number<span>*</span><input type="text" placeholder="eg-tn11ak7777" name="regnum" id="regnum" required></label>
+<br>
+<br>
+        <label for="ownername">enter the ownername<span>*</span><input type="text" name="ownername" id="ownername" placeholder="name" required>
+   <br>
+   <br>
+            <label for="dob">enter the dob<span>*</span><input type="date" name="dob" id="dob" required>
+       <br>
+       <br>
+
+                <label for="mail">enter the mail<span>*</span><input type="email" name="mail" id="mail" required>
+           <br>
+           <br>
+
+                    <label for="phonenumber">enter the phonenumber<span>*</span><input type="text" name="phonenumber" id="phonenumber" required>
+                <br>
+                <br>
+
+                        <label for="policynumber">enter the policy number<span>*</span><input type="text" name="policynumber" id="policynumber" required>
+                    <br>
+                    <br>
+
+                            <label for="gstno">enter the gst no<span>(optional)</span><input type="text" name="gst">
+                                <br>
+                                <br>
+                                <input type="submit" value="submit">
+    </form>
+</body>
+</html>

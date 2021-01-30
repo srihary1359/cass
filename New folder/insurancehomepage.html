@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropbtn {
+          background-color: rgb(202, 202, 236);
+          color:black;
+          padding: 10px;
+          margin-right: 20px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+          text-transform: capitalize;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: center;
+        }
+        
+        .dropdown-content a:hover {background-color:gray;}
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+          background-color:yellow;
+        }
+        .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: lightyellow;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color:black;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#sri{
+background-color: lightyellow;
+}
+button{
+text-transform: capitalize;
+width: 50mm;
+}
+#no{
+
+    background-image: url("insurance.jpg");
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 900;
+font-family: cursive;
+width:150mm;
+}
+#slide{
+  /* border: 2px red solid; */
+   background-image: url("backfinal.jfif"); 
+   background-size: cover;
+}
+.l{
+    color: red;
+    font-weight: 400;
+}
+.k{
+    text-align: center;
+}
+#easy{
+    /* line-height: 20px; */
+    text-align: justify;
+margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 500px;
+    /* border: brown solid 2px; */
+}
+/* hr{
+    color: chocolate;
+} */
+.d{
+    font-weight: 700;
+    font-style: italic;
+}
+#img1{
+    margin-top: -130px;
+    margin-right: 1100px;
+    margin-left: 230px;
+    /* border: chocolate 2px solid; */
+}
+#cash{
+    text-align: justify;
+        margin-right: 500px;
+        margin-left: 30px;
+
+}
+#img2{
+    margin-top: -130px;
+    margin-right: 230px;
+    margin-left:1100px ;
+        /* border: chocolate 2px solid; */
+
+}
+#customers{
+    text-align: justify;
+margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 500px;
+            /* border: chocolate 2px solid;           */
+}
+#img3{
+    margin-top: -130px;
+    margin-right: 1100px;
+    margin-left: 230px;
+    /* border: chocolate 2px solid; */
+}
+#slep{
+    text-align: justify;
+        margin-right: 500px;
+        margin-left: 30px;
+}
+#img4{
+    margin-top: -130px;
+    margin-right: 230px;
+    margin-left:1100px ;
+}
+#car{
+    text-align: justify;
+    /* border: darkblue solid; */
+    word-spacing: 4px;
+    margin-top: -10px;
+    margin-left:200px;
+    margin-right: 200px;
+    /* margin: 100px; */
+}
+#mar{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#cars{
+    margin-left: 700px;
+    margin-right: 1150px;
+    /* border: darkblue solid; */
+
+}
+#use{
+    margin: 100px;
+}
+.heading{
+    font-weight: 800;
+    font-style: oblique;
+}
+.space{
+    margin-left: 20px;
+}
+#why{
+  /* padding: 30px; */
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 30px;
+  /* border: 4px red solid; */
+}
+#center{
+  text-align: center;
+}
+.reason{
+  font-weight: 800;
+}
+#reason1{
+  /* border: red 2px solid; */
+  margin-right: 900px;
+  margin-left: 50px;
+  /* margin: 1200px; */
+}
+#reason2{
+  padding: 2px;
+/* border: 2px red solid; */
+margin-left: 3.5in;
+margin-right: 5.35in;
+margin-top: -2.65in;
+}
+#reason3{
+/* border: 2px red solid; */
+margin-left: 7.8in;
+margin-right: 1in;
+margin-top: -2.65in;
+}
+.line{
+  background-color: darkblue;
+}
+#life{
+  margin-left: 150px;
+  margin-right: 150px;
+}
+#all{
+  /* padding-top: 100px; */
+  /* margin: 100px; */
+  margin-left: 150px;
+  margin-right: 150px;
+  /* border: red solid 2px; */
+}
+#imageall{
+  /* border: red 2px solid; */
+  margin-left: 500px;
+  margin-right: 300px;
+  }
+  #bore{
+    width: 1500px;
+    margin-left: 450px;
+    margin-top: 30px;
+    /* border: red 2px solid; */
+  }
+  hr{
+    background-color:black;
+    border-bottom:black 0.75px solid;
+  }
+  body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-style: normal;
+  }
+  h5{
+    font-size: 20px;
+  }
+  #cent{
+    /* word-spacing: px; */
+    /* letter-spacing: 1px; */
+    text-align: center;
+  }
+  #home{
+    /* border: 2px solid red; */
+    margin-top: 50px;
+    /* padding: 40px; */
+    margin-left: 280px;
+    margin-right:280px;
+  }
+  #houseinsurance{
+    text-align: center;
+    padding: 30px;
+    /* border: 2px red solid; */
+  }
+  #house{
+    text-align: justify;
+    line-height: 30px;
+  }
+  #noline{
+    text-decoration: none;
+  }
+
+ </style>
+</head>
+<body>
+    <div id="sri">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="about.html">About</a>
+        <a href="clients.html">Clients</a>
+        <a href="contact.html">Contact</a>
+        <a href="help.html">Help</a>
+
+      </div> 
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+    <div class="dropdown">
+        <p class="dropbtn"><a href="insurancehomepage.html" id="noline">home</a></p>
+        <div class="dropdown-content">
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">house insurance</button>
+        <div class="dropdown-content">
+        <a href="#">Standard Fire and Special Perils Policy.</a>
+        <a href="#">earthquake insurance</a>
+        <a href="#">Property insurance</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">vehicle insurance</button>
+        <div class="dropdown-content">
+        <a href="twowheeler.html">two wheeler insurance</a>
+        <a href="fourwheeler.html">four wheeler insurance</a>
+        <a href="other.html">other vehicle insurance</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">life insurance</button>
+        <div class="dropdown-content">
+        <a href="#">Jeevan Umang</a>
+        <a href="#">Jeevan Amar</a>
+        <a href="#">Money Back 25 years</a>
+        </div>
+      </div>
+      <div class="dropdown" id="j">
+        <p class="dropbtn" id="no">!!!!guten tags insurance welcome you</p>
+        <div class="dropdown-content">
+        </div>
+      </div>
+      </div>
+   </body> 
+   <body id="slide">
+    <div id="bore" class="w3-content w3-section" style="max-width:640px">
+        <img class="mySlides" src="vehicleinsu.jpg" style="width:100%;">
+        <img class="mySlides" src="bike.jfif" style="width:100%">
+        <img class="mySlides" src="houseinsurance.jfif" style="width:100%">
+        <img class="mySlides" src="cheap-home-insurance.jpg" style="width:100%">
+      </div>
+      <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+      </script>
+   </body>
+   <br>
+<hr>
+   <!-- #region uses of car insurance starts-->
+   <body>
+    <h1 class="k"><span class="l">!---</span>Car insurance that helps you 'take it easy'<span class="l">---!</span></h1>
+    <div id="cars">
+        <img src="carjj.svg">
+    </div>
+    <!-- <br> -->
+<!-- <hr style="color: crimson;"> -->
+<div id="car">
+    <p>Cars are much more than a necessity for most of us, a means of convenience, we have financially as well as emotionally invested in our cars. And hence we don't think twice before securing our cars with the best car insurance policy. And what better than HDFC ERGO's Car insurance, with over #1.5 Crore customers' who've entrusted us with the responsibility of safeguarding their beloved asset, we assure you comprehensive coverage for your car. We help you take the road to quality coverage and attractive discounts with our customized plans made just for you. With us you can truly 'Take it easy'.
+    </p>
+    </div>
+    <br>
+    <hr>
+    <div id="all">
+      <h1 class="k"><span class="l">!---</span>Life insurance that helps you 'take it easy'<span class="l">---!</span></h1>
+<p id="imageall"><img src="alliswell.jfif" ></p>    
+  <!-- <div id="life"> -->
+  <p  id="life">Life Insurance is a contract between an insurance policyholder and an insurance company, where the insurer promises to pay a sum of money in exchange for a premium after a set period or upon the death of an insured person.</p>
+    </div>
+    <!-- #endregion life ends-->
+    <!-- #region home starts-->
+<hr>
+    <div id="home">
+      <h1 class="k"><span class="l">!---</span>Home insurance that helps you 'take it easy'<span class="l">---!</span></h1>
+      <p id="houseinsurance"><img src="househome.jfif" alt=""></p>
+      <p id="house">Calamities come unannounced and can cause irreparable damage to your home and finances. With comprehensive home insurance,
+         secure your home and its contents against natural calamities and stay rest assured.
+         Cover against Fire, Theft, Earthquake & all Natural Calamity. Buy Instant Policy Online. Choose the Best Policy at Policybazaar & Safegaurd Your House from Disasters. 24*7 Support System.</p>
+    </div>
+   </body>
+   <!-- <br> -->
+   <!-- #region how to apply starts-->
+   <br>
+   <hr>
+   <body>
+     <div id="why">
+       <div>
+<h1 id="cent"><span class="l">!---</span>3 Reasons why Guten Tags  insurance should be your first choice<span class="l">---!</span></h1>
+       </div>
+       <div id="reason1">
+         <img src="uptp70.svg">
+<h5 class="reason">Upto 70% Off^ on Premium</h5>
+<p>Maximize your savings with discounts that may sound unbelievable.</p>
+       </div>
+       <div id="reason2">
+         <img src="instant-policy.svg">
+        <h5 class="reason">24x7 assistance</h5>
+<p>Stranded in the middle of nowhere? Help is just a call away!</p>
+       </div>
+       <div id="reason3">
+        <img src="same-day.svg">
+       <h5 class="reason">Secure your life in 3 mins online</h5>
+<p>Secure your journey of a thousand miles in just 3 minutes and get instant security for your car!!</p>
+      </div>
+     </div>
+   </body>
+   <br>
+   <hr>
+   <body>
+    <h1 class="k"><span class="l">!---</span> quick guide on how to buy car insurance online<span class="l">---!</span></h1>
+       <div id="use">
+<div>
+    <!-- #region steps starts-->
+<h5 class="heading"><span class="l">Scenario 1</span><span class="space">you the owner of a shiny new set of wheels?</span></h5>
+<p>We have a car insurance premium calculator specifically designed for new car owners. You just need to keep handy details such as the date of registration, manufacturer, model, registration city, the sum insured (value of the vehicle), product type required (comprehensive/liability), and if you wish to opt for any add on covers. You get an instant quote in one click and no getting muddled with different amounts and figures, your premium amount is clear and precise.
+</p>
+<br>
+<h5 class="heading"><span class="l">Scenario 2</span><span class="space">Wish to secure your loyal companion on your daily commute and long drives?</span></h5>
+<p>Don’t fret, <b>!Guten Tags </b> car insurance premium calculator for used cars comes to your rescue. Now secure your car with car insurance online knowing the car insurance premium amount beforehand. All you need are some mandatory details and you get a quick quote on your screen.
+</p>
+    <br>
+    <h5 class="heading"><span class="l">Scenario 3</span><span class="space">Renewing your promise of safeguarding your loved asset?</span></h5>
+    <p>It is crucial to renew your car insurance before its expiry date as it can leave you vulnerable to risks on the road and hefty fines, leaving you with a lighter wallet. And to get more clarity on the premium amount while renewing your car insurance policy,<b>!Guten Tags </b>car insurance renewal premium calculator is the tool you need.
+    </p>
+    <h5 class="heading"><span class="l">Procedure</span><span class="space">Follow these steps</span></h5>
+<p>
+    Simple steps to buy car insurance online and get coverage that your car deserves:
+<ul>
+    <li> Enter your car registration number</li>
+    <li>Select the make, model, and variant of your car</li>
+    <li>Choose a plan that appeals to you and fulfills your car insurance needs</li>
+    <li>Opt for an add on cover to supplement your coverage</li>
+    <li>Enter your details like name, mobile number, and email id to get an instant quote</li>
+    <li>Proceed to pay online through our secured payment gateways</li>
+    <li>Upload the scanned copies of required documents and receive your policy in your inbox</li>
+</ul>
+</p>
+</div>
+       </div>
+   <!-- #uses pages starts-->
+   <hr>
+   <body >
+       <div>
+       <h1 class="k"><span class="l">!---</span>What Guten Tags insurance stand out<span class="l">---!</span></h1>
+       </div>
+       <div id="mar">
+       <div id="easy">
+           <h5><span class="d">Easy on your pocket</span></h5>
+        <p>
+            With multiple choice offerings our premium starts at just ₹2072*, we offer premiums that don’t burn a hole in your wallet while offering maximum benefits. Choosing a comprehensive car insurance policy entitles you to savings of upto 70% and no-claim bonus benefits of upto 50%. And with our car insurance premium calculator calculating your car insurance premium amount is a breeze.</p>
+        </div>
+        <div>
+        <p id="img1"><img src="imgcar.svg"></p>
+       </div>
+<br>
+<!-- #region cashless-->
+<div id="cash">
+    <h5 class="d">Cashless assistance</h5>
+    <p>
+        Hiccup in the journey? Now no more worrying about cash to get your car fixed while you are stranded in the middle of nowhere. With our 7400+ cashless garages pan India help is never too far, our widespread network of cashless garages will be your friend in need. To add to this our 24x7 roadside assistance ensures help is just a phone call away, and your car is taken care of anywhere anytime.</p>
+</div>
+<div>
+    <p id="img2"><img src="cashless-garages.svg" ></p>
+</div>
+<br>
+<!-- #region growing-->
+<div id="customers">
+    <h5 class="d">Growing family of happy customers</h5>
+    <p>
+        With over #1.5Crore+ happy customers, we are proud to say that we’ve put smiles on a million faces and counting. The testimonials from our ever growing family of customers are heartwarming to say the least. So toss your car insurance related worries aside and join the happy customers club!
+    </p>
+</div>
+<div>
+  <p id="img3">  <img src="happycustomerillustration.png"></p>
+</div>
+<!-- #for slepless nights-->
+<br>
+<div id="slep">
+    <h5 class="d">No more sleepless nights</h5>
+<p>
+    Car needs repair but worried how you’ll commute to office next morning? HDFC ERGO’s Overnight repair service is here to save the day! We take care of minor accidental damages or breakdowns while you catch up on your sleep and get your car back in shape by morning. If this doesn’t spell convenience, what does?</p>
+</div>
+<div>
+<p id="img4"><img src="overnight-repair.svg"></p>
+</div>
+</div>
+<hr>
+   </body>
+   <!-- #uses pages end -->
+   <body>
+     <form action="comment" method="GET">
+     <h5>comments && feedback</h5>
+Enter Name<input type="text" name="name">
+<br>
+<br>
+     <textarea name="comments" id="comments" cols="100" rows="20" placeholder="please enter your valueable feedback"></textarea>
+<br>
+<input type="submit" value="submit" name="submit">
+    </form>
+   </body>
+</html>

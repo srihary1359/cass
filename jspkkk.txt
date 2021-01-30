@@ -1,0 +1,73 @@
+Scriptlet tag
+
+		A scriptlet tag is used to execute java source code in JSP. 
+
+		Example:
+
+		<html>  
+		<body>  
+		<form action="welcome.jsp">  
+		<input type="text" name="uname">  
+		<input type="submit" value="go"><br/>  
+		</form>  
+		</body>  
+		</html>
+
+		jSP.FILE
+		
+
+		<html>  
+		<body>  
+		<%  
+		String name=request.getParameter("uname");  
+		out.print("welcome "+name);  
+		%>  
+		</form>  
+		</body>  
+		</html>  
+
+JSP expression tag:
+
+The code placed within JSP expression tag is written to the output stream of the response. 
+
+Syntax : <%=  statement %>  
+
+ 	Example:
+
+		<html>  
+		<body>  
+		Current Time: <%= java.util.Calendar.getInstance().getTime() %>  
+		</body>  
+		</html>  
+
+
+
+JSP Declaration Tag
+
+The JSP declaration tag is used to declare fields and methods.
+
+Syntax :  <%!  field or method declaration %>  
+
+Example 
+
+	Jsp to declare the feilds
+
+	<html>  
+	<body>  
+	<%! int data=50; %>  
+	<%= "Value of the variable is:"+data %>  
+	</body>  
+	</html>  
+
+	Jsp to declare the methods
+	
+		<html>  
+		<body>  
+		<%!   
+		int square(int n){  
+		return n*n;  
+		}  
+		%>  
+		<%= "Square of given value :"+Square(2) %>  
+		</body>  
+		</html>  
